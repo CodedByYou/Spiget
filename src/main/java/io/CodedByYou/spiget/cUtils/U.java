@@ -16,9 +16,9 @@ public class U {
     public static JSONObject getResource(String x,int id)throws Exception{
         String url;
         if(x == null){
-            url = "https://api.spiget.org/v2//resources/"+id;
+            url = "https://api.spiget.org/v2/resources/"+id;
         }else{
-            url = "https://api.spiget.org/v2//resources/"+id+"/"+x;
+            url = "https://api.spiget.org/v2/resources/"+id+"/"+x;
         }
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();

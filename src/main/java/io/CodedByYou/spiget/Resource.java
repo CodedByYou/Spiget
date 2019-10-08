@@ -112,7 +112,7 @@ public class Resource {
         z = z.replaceAll(" - ","-");
         z = z.replaceAll(" ","-");
         resourceLink = "https://spigotmc.org/resources/"+z+"."+ resourceid;
-
+        resourceIconLink = "https://www.spigotmc.org/" + resoure.getJSONObject("icon").getString("url");
         author = Author.getByResource(resourceid);
     }
     private JSONObject get(String x)throws Exception{
